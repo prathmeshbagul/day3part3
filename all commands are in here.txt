@@ -1,0 +1,77 @@
+
+Bagu_pra@KLIN0078 MINGW64 ~
+$ cd /d/day3part3
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3
+$ git init
+Initialized empty Git repository in D:/day3part3/.git/
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ cd .git
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3/.git (GIT_DIR!)
+$ ls
+HEAD  config  description  hooks/  info/  objects/  refs/
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3/.git (GIT_DIR!)
+$ cd ..
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ ls
+'New Text Document.txt'   file1.txt    file3.docx   file4.txt    file6.docx
+ README.md                file2.docx   file3.txt    file5.docx   file6.txt
+ file1.docx               file2.txt    file4.docs   file5.txt
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ echo "# day3part" >> README.md
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git add .
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git commit -m 'firstcommitacctomethod'
+[master (root-commit) ac8fb31] firstcommitacctomethod
+ 14 files changed, 2 insertions(+)
+ create mode 100644 New Text Document.txt
+ create mode 100644 README.md
+ create mode 100644 file1.docx
+ create mode 100644 file1.txt
+ create mode 100644 file2.docx
+ create mode 100644 file2.txt
+ create mode 100644 file3.docx
+ create mode 100644 file3.txt
+ create mode 100644 file4.docs
+ create mode 100644 file4.txt
+ create mode 100644 file5.docx
+ create mode 100644 file5.txt
+ create mode 100644 file6.docx
+ create mode 100644 file6.txt
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git remote add origin https://github.com/prathmeshbagul/day3part3.git
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 353 bytes | 176.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/prathmeshbagul/day3part3.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
