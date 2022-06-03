@@ -1,0 +1,249 @@
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        vendors.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ ls
+'New Text Document.txt'          file2.docx   file4.docs   file6.docx
+ README.md                       file2.txt    file4.txt    file6.txt
+'all commands are in here.txt'   file3.docx   file5.docx   vendors.txt
+ file1.docx                      file3.txt    file5.txt
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$  git add .
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   vendors.txt
+
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ ls
+'New Text Document.txt'          file2.docx   file4.docs   file6.docx
+ README.md                       file2.txt    file4.txt    file6.txt
+'all commands are in here.txt'   file3.docx   file5.docx   vendors.txt
+ file1.docx                      file3.txt    file5.txt
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ open -a notepad emp.txt
+bash: open: command not found
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ nano vendors.txt
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   vendors.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   vendors.txt
+
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git add vendors.txt
+warning: LF will be replaced by CRLF in vendors.txt.
+The file will have its original line endings in your working directory
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git commit -m 'edited using nano filename.ext'
+[master 84e2cb8] edited using nano filename.ext
+ 1 file changed, 1 insertion(+)
+ create mode 100644 vendors.txt
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/prathmeshbagul/day3part3.git
+   a12649c..84e2cb8  master -> master
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ touch emp.txt
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ nano vendors.txt
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   vendors.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        emp.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git add emp.txt
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   emp.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   vendors.txt
+
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git commit -m 'newempandmodifiedvendor'
+[master 43919ae] newempandmodifiedvendor
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 emp.txt
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ gitstatus
+bash: gitstatus: command not found
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   vendors.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git add vendors.txt
+warning: LF will be replaced by CRLF in vendors.txt.
+The file will have its original line endings in your working directory
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   vendors.txt
+
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git commit -m 'modifiedvendoradded'
+[master 99c3bf6] modifiedvendoradded
+ 1 file changed, 2 insertions(+)
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 536 bytes | 536.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/prathmeshbagul/day3part3.git
+   84e2cb8..99c3bf6  master -> master
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ nano emp.txt
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   emp.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git add .
+warning: LF will be replaced by CRLF in emp.txt.
+The file will have its original line endings in your working directory
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   emp.txt
+
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git commit -m 'empphone'
+[master 9b39346] empphone
+ 1 file changed, 1 insertion(+)
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Bagu_pra@KLIN0078 MINGW64 /d/day3part3 (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/prathmeshbagul/day3part3.git
+   99c3bf6..9b39346  master -> master
